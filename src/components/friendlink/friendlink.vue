@@ -3,24 +3,24 @@
     <div class="others">
       <h1>友情链接</h1>
       <div class="card-list">
-        <a href="https://www.baidu.com/">百度</a>
-        <a href="https://www.aliyun.com/">阿里云</a>
-        <a href="https://www.1688.com/">阿里巴巴</a>
-        <a href="https://www.taobao.com/">淘宝</a>
-        <a href="http://www.sohu.com/">搜狐</a>
-        <a href="http://www.asus.com.cn/">华硕</a>
-        <a href="http://www.szhjkj.cn/product.html">恒君科技</a>
-        <a href="http://www.leadsmt.com/">力德信合科技有限公司</a>
-        <a href="http://www.fllps.com/">菲浦斯科技有限公司</a>
-        <a href="https://www.baidu.com/">百度</a>
-        <a href="https://www.aliyun.com/">阿里云</a>
-        <a href="https://www.1688.com/">阿里巴巴</a>
-        <a href="https://www.taobao.com/">淘宝</a>
-        <a href="http://www.sohu.com/">搜狐</a>
-        <a href="http://www.asus.com.cn/">华硕</a>
-        <a href="http://www.szhjkj.cn/product.html">恒君科技</a>
-        <a href="http://www.leadsmt.com/">力德信合科技有限公司</a>
-        <a href="http://www.fllps.com/">菲浦斯科技有限公司</a>
+        <a href="https://www.baidu.com/" target="_blank">百度</a>
+        <a href="https://www.aliyun.com/" target="_blank">阿里云</a>
+        <a href="https://www.1688.com/" target="_blank">阿里巴巴</a>
+        <a href="https://www.taobao.com/" target="_blank">淘宝</a>
+        <a href="http://www.sohu.com/" target="_blank">搜狐</a>
+        <a href="http://www.asus.com.cn/" target="_blank">华硕</a>
+        <a href="http://www.szhjkj.cn/product.html" target="_blank">恒君科技</a>
+        <a href="http://www.leadsmt.com/" target="_blank">力德信合科技有限公司</a>
+        <a href="http://www.fllps.com/" target="_blank">菲浦斯科技有限公司</a>
+        <a href="https://www.baidu.com/" target="_blank">百度</a>
+        <a href="https://www.aliyun.com/" target="_blank">阿里云</a>
+        <a href="https://www.1688.com/" target="_blank">阿里巴巴</a>
+        <a href="https://www.taobao.com/" target="_blank">淘宝</a>
+        <a href="http://www.sohu.com/" target="_blank">搜狐</a>
+        <a href="http://www.asus.com.cn/" target="_blank">华硕</a>
+        <a href="http://www.szhjkj.cn/product.html" target="_blank">恒君科技</a>
+        <a href="http://www.leadsmt.com/" target="_blank">力德信合科技有限公司</a>
+        <a href="http://www.fllps.com/" target="_blank">菲浦斯科技有限公司</a>
       </div>
     </div>
   </div>

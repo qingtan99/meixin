@@ -143,11 +143,11 @@
 	    },
 
 	    methods: {
-	    	
+
 	    },
 
 		mounted() {
-			
+
 		}
 	}
 </script>
@@ -177,7 +177,7 @@
 	    transition: all 1s;
 	    z-index: 10;
 	}
-	
+
 	.ms-nav-prev {
 		left: 0;
 		background-position: -49px 0;
@@ -378,7 +378,7 @@
 	.about-company-content .about-company-t {
 		position: relative;
 		width: 50%;
-		height: 600px;
+		height: 475px;
 		background: #fff;
 	}
 

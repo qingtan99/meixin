@@ -29,7 +29,53 @@
 	<!--</div>-->
   <div class="pjax-container">
     <div class="others">
-      <h1>联系我们</h1>
+        <h1>联系我们</h1>
+        <div class="others-content">
+            <div class="others-content-note">
+                <p>您可以发送电子邮件至：meichang202@126.com。</p>
+                <p>我们很想听到您的声音！或者直接填写下面的表格</p>
+            </div>
+
+            <div class="others-content-row fix">
+                <div class="others-content-left fl">
+                  <form action="">
+                      <div class="form-group">
+                          <input class="form-control" type="text" placeholder="姓名（必填）">
+                      </div>
+                      <div class="form-group">
+                          <input class="form-control" type="text" placeholder="电话（必填）">
+                      </div>
+                      <div class="form-group">
+                          <input class="form-control" type="text" placeholder="邮箱">
+                      </div>
+                      <div class="form-group">
+                          <textarea class="form-control ly" type="text" placeholder="请在此输入留言内容，我们会尽快与您联系。（必填）"></textarea>
+                      </div>
+                    <div class="form-group">
+                          <button type="button">发送</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="others-content-right fr">
+                    <p>
+                        <b>联系方式</b>
+                    </p>
+                    <p>
+                        电话：0769-85323589
+                    </p>
+                    <p>
+                        QQ：1141030009
+                    </p>
+                    <p>
+                        邮箱：<a class="mail" href="Mailto:meichang202@126.com">meichang202@126.com</a>
+                    </p>
+                    <p>
+                        <b>办公地点</b>
+                    </p>
+                    <p>地址：东莞市长安镇涌头村东黎街21号（涌头幼儿园旁边）</p>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 </template>
@@ -46,109 +92,78 @@
 	}
 </script>
 <style scoped>
-	h1,h1,h3,h4,h5,h6 { font-weight: 100; font-weight: inherit;}
-	.contact-wrap {
-		position: relative;
-		z-index: 2;
-	}
+  .others-content-note {
+    font-size: 14px;
+    color: #787d82;
+    line-height: 1.9;
+  }
 
-	.contact-sectionbg {
-	    background: #000 url(http://www.reenoo.com/img/news/n1.jpg) center no-repeat;
-	    background-size: cover;
-	}
+  .others-content-left,
+  .others-content-right {
+    width: calc(50% - 60px);
+  }
 
-	.top-section > .w1200 {
-	    position: relative;
-	    z-index: 2;
-	}
+  .others-content-left form {
+      margin-top: 1em;
+  }
 
-	.contact-introbox {
-	    position: relative;
-	    height: 100%;
-	}
+  .others-content-left .form-group {
+      margin-bottom: 1em;
+  }
 
-	.contact-introcontent h1 {
-		font-size: 20px;
-		color: #7b7b7b;
-	}
+  .form-group .form-control {
+      width: calc(100% - 42px );
+      border-color: #ebebeb;
+      border-radius: 2px;
+      color: #b5b9bf;
+      line-height: inherit;
+      -webkit-transition: 0.2s linear;
+      transition: 0.2s linear;
+      line-height: 32px;
+      font-size: 14px;
+      padding: 7px 20px;
+      border: 1px solid rgba(0, 0, 0, .15);
+      resize: none;
+      outline: none;
+  }
 
-	.contact-introcontent h3 {
-	    color: #7b7b7b;
-	    font-size: 20px;
-	    margin-top: 15px;
-	    margin-bottom: 8px;
-	}
+  .form-group .form-control:focus {
+    border-color: #8ab5f7;
+    color: #616771;
+  }
 
-	.contact-introcontent p span {
-	    color: #0099ff;
-	}
+  .form-group .form-control.ly {
+      min-height: 144px;
+  }
 
-	.contact-introcontent p {
-	    color: #7b7b7b;
-	    line-height: 22px;
-	}
+  .form-group button {
+      width: 100%;
+      height: 40px;
+      border-radius: 3px;
+      background: #2f82ff;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      outline: none;
+  }
 
-	.contact-introbox > .pagetitle-move {
-	    position: absolute;
-	    right: 0;
-	    top: 292px;
-	    color: #fff;
-	    font-size: 36px;
-	    z-index: 2;
-	    -webkit-transition: all 1s;
-	    transition: all 1s;
-	}
+  .others-content-right {
+      margin: 1em 0;
+      padding: 15px;
+      background: url("../../assets/images/about/deco-quote.png") 40px 40px no-repeat #f5f6f7;
+      border-radius: 3px;
+      overflow: hidden;
+  }
 
-	.contact-introcontent h2 {
-	    color: #0099ff;
-	    font-size: 30px;
-	    letter-spacing: -1px;
-	    line-height: 36px;
-	}
+  .others-content-right p {
+      margin-bottom: 1em;
+  }
 
-	.pagetitle-move {
-	    -webkit-animation: pagetitle-move 1s forwards;
-	    animation: pagetitle-move 1s forwards;
-	}
+  .others-content-right p .mail {
+      color: #0099ff;
+  }
 
-	.contact-introcontent {
-	    position: absolute;
-	    left: 0;
-	    bottom: 0;
-	    z-index: 10;
-	    padding: 19px 0;
-	    height: 262px;
-	    width: 100%;
-	    background-color: #fff;
-	    text-align: center;
-	}
-
-	.map-top {
-	    width: 1200px;
-	    height: 142px;
-	    background: #a0cfb6;
-	    position: absolute;
-	    left: 0;
-	    bottom: -172px;
-	    z-index: 1;
-	    text-align: center;
-	    padding-top: 50px;
-	    transition: all .3s;
-	}
-
-	.map-top p {
-	    color: #486f5a;
-	    font-size: 13px;
-	}
-
-	.map-top h2 {
-	    font-size: 30px;
-	    color: #486f5a;
-	    padding-top: 10px;
-	}
-
-	.bm-view {
-		width: 100%;
-		height: 300px;
-	}
+  .others-content-right p .mail:hover {
+      text-decoration: underline;
+  }
 </style>

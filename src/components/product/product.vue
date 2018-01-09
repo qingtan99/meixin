@@ -11,7 +11,7 @@
 							<div class="page" v-for="(item, i) in product">
 								<div :class="['page-link', {'active': hideIndex[i]==true}, 'fix']">
 									<a href="javascript:;" @click="showAnchors(i)">{{item.sidename}}</a>
-									<i 
+									<i
 									:class="['icon iconfont', 'icon-down-trangle', {'icon-up-trangle': hideIndex[i]==true}]"
 									@click="showAnchors(i)"></i>
 								</div>
@@ -34,7 +34,7 @@
 					<div class="contact-us-wrap">
 						<p class="contact-note">欢迎您来电咨询产品信息，请确认咨询时间，以免耽误。</p>
 						<div class="contact-infor">
-							<p><i class="icon-tele"></i><span>18200703173</span></p>
+							<p><i class="icon-tele"></i><span>0769-85323589</span></p>
 							<p><i class="icon-qq"></i><span>1141030009</span></p>
 							<p><i class="icon iconfont icon-wroktime"></i><span>9:00-18:00</span></p>
 							<p class="time-note">（星期天/国家公休日 休息）</p>
@@ -89,9 +89,9 @@
 					</div>
 					<div class="pagination-wrap">
 						<v-pagination
-						:page-index="currentPage" 
-			            :total="count" 
-			            :page-size="pageSize" 
+						:page-index="currentPage"
+			            :total="count"
+			            :page-size="pageSize"
 			            @change="pageChange"></v-pagination>
 					</div>
 				</div>
@@ -192,7 +192,7 @@
 				if(this.hideIndex[i]) {
 					this.$set(this.hideIndex, i, false);
 				}else {
-					this.$set(this.hideIndex ,i, true); 
+					this.$set(this.hideIndex ,i, true);
 				}
             },
 

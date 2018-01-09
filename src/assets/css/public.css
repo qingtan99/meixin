@@ -89,8 +89,13 @@ img{
     visibility: hidden;
 }
 
-/* 顶部导航 */
+/*新浪分享图片宽高设置*/
+#shareBox {
+  width: 26px;
+  height: 26px;
+}
 
+/* 顶部导航 */
 .head {
     position: fixed;
     top: 0;

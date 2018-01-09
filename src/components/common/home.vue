@@ -37,7 +37,11 @@
 	    <div class="main-content">
 	    	<router-view></router-view>
 	    	<div class="scroll-top">
-	    		<a class="ele-weixin" href="javascript:;">
+          <a class="ele" href="javascript:;">
+            <i class="icon iconfont icon-QQ"></i>
+            <span>QQ咨询</span>
+          </a>
+	    		<a class="ele" href="javascript:;">
 	    			<i class="icon iconfont icon-wxgzh"></i>
 	    			<span>官方微信</span>
 	    			<div class="weixin-box">
@@ -76,14 +80,14 @@
 			}
 		},
 		methods: {
-			showHiHead(wint) {
-	    		if(wint >99){
-					this.isShow = true;
-					this.toTopShow = false;
-				}else{
-					this.isShow = false;
-					this.toTopShow = true;
-				};
+			  showHiHead(wint) {
+	    		  if(wint >99){
+                this.isShow = true;
+                this.toTopShow = false;
+            }else{
+                this.isShow = false;
+                this.toTopShow = true;
+            };
 	    	},
 
 	    	//返回顶部
@@ -117,17 +121,17 @@
 }
 
 .input-search {
-	margin-left: 10px;
+	  margin-left: 10px;
 }
 
 .lang-pre {
-	margin-left: 16px;
+	  margin-left: 16px;
 }
 
 .input-search input {
-	outline: none;
-	margin-top: -8px;
-	font-size: 14px;
+    outline: none;
+    margin-top: -8px;
+    font-size: 14px;
     color: #666666;
     float: left;
     width: 0px;
@@ -142,10 +146,10 @@
 }
 
 .input-search i {
-	padding: 3px 0 0 5px;
-	display: block;
-	float: left;
-	cursor: pointer;
+    padding: 3px 0 0 5px;
+    display: block;
+    float: left;
+    cursor: pointer;
 }
 
 .input-search:hover input {
@@ -154,9 +158,9 @@
 }
 
 .nav-lang-box {
-	width: 185px;
-	height: 56px;
-	padding: 0 15px;
+    width: 185px;
+    height: 56px;
+    padding: 0 15px;
     position: absolute;
     top: 49px;
     right: -38px;
@@ -200,6 +204,7 @@
 }
 
 .scroll-top a {
+    position: relative;
     display: block;
     width: 26px;
     padding: 16px 0;
@@ -230,7 +235,7 @@
     width: 172px;
     height: 212px;
     bottom: 0px;
-    right: 56px;
+    right: 43px;
     -webkit-transition: opacity .25s,transform .3s;
     -moz-transition: opacity .25s,transform .3s;
     transition: opacity .25s,transform .3s;
@@ -266,7 +271,7 @@
     display: block;
 }
 
-.scroll-top .ele-weixin:hover .weixin-box {
+.scroll-top .ele:hover .weixin-box {
     display: block;
     visibility: visible;
     opacity: 1;
@@ -275,6 +280,10 @@
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
+}
+
+.scroll-top .ele .icon-dianhua {
+    font-size: 26px;
 }
 
 .to-top.hide {

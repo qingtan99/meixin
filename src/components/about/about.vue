@@ -93,6 +93,6 @@
 
   .other-right-wrap {
       position: relative;
-      min-height: 750px;
+      min-height: 855px;
   }
 </style>
