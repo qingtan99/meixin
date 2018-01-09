@@ -166,7 +166,6 @@
             	let url = '../../../static/product/sideMenu.json';
             	this.$http.get(url).then(({data}) => {
         			this.product = data.result;
-        			console.log(this.product)
             	})
                 // //模拟
                 // let url = `/api/list/?pageSize=${this.pageSize}&currentPage=${this.currentPage}`
@@ -204,10 +203,12 @@
             }
         },
         mounted() {
+          this.$nextTick(function() {
             //请求第一页数据
             this.getList()
-        } ,
-		components: {
+          })
+        },
+		  components: {
 	      	'v-pagination': pagination,
 	    }
 	}

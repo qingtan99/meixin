@@ -1,0 +1,47 @@
+{
+  "code":0,
+  "result":[
+    {
+      "serviceName": "设备维修",
+      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
+      "img": "https://flinkhub.com/assets/img/learn.png",
+      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+    },
+    {
+      "serviceName": "设备翻新",
+      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
+      "img": "https://flinkhub.com/assets/img/learn.png",
+      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+    },
+    {
+      "serviceName": "备件维修",
+      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
+      "img": "https://flinkhub.com/assets/img/learn.png",
+      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+    },
+    {
+      "serviceName": "购买",
+      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
+      "img": "https://flinkhub.com/assets/img/learn.png",
+      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+    },
+    {
+      "serviceName": "设备改造",
+      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
+      "img": "https://flinkhub.com/assets/img/learn.png",
+      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+    },
+    {
+      "serviceName": "设备移机",
+      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
+      "img": "https://flinkhub.com/assets/img/learn.png",
+      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+    },
+    {
+      "serviceName": "设备研发",
+      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
+      "img": "https://flinkhub.com/assets/img/learn.png",
+      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+    }
+  ]
+}

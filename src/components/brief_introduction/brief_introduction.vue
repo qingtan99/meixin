@@ -108,7 +108,6 @@
 <script>
 	import '../../assets/css/swiper/swiper.min.css'
 	import '../../assets/css/swiper/animate.min.css'
-	// import '../../assets/js/swiper.animate/swiper.animate.min.js'
 	export default {
 		data() {
 			return {
