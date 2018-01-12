@@ -8,7 +8,7 @@
 					</div>
 					<div class="current-menu-content">
 						<div class="content-item">
-							<div class="page" v-for="(item, i) in product">
+							<div class="page" v-for="(item, i) in sidemenu">
 								<div :class="['page-link', {'active': hideIndex[i]==true}, 'fix']">
 									<a href="javascript:;" @click="showAnchors(i)">{{item.sidename}}</a>
 									<i
@@ -57,33 +57,12 @@
 				<div class="product-wrap-list">
 					<div class="product-class-nav">
 						<ul class="fix">
-							<li class="fl">
+							<li class="fl" v-for="item in product"  @click="productDetails(this)">
 								<div class="course-list-img">
 									<div class="img-see"></div>
-									<img src="http://mmbiz.qpic.cn/mmbiz/dhdQeNTHV5c6TRfP2lkOej8kvE6zAcesVQueTq1NDnghwH4Iic9nNd20ibuEZJesSLTDC4JibiaFzJLJicsIE1IXhZw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1" alt="">
+									<img v-bind:src="item.thumimg" alt="">
 								</div>
-								<h4>切割机</h4>
-							</li>
-							<li class="fl">
-								<div class="course-list-img">
-									<div class="img-see"></div>
-									<img src="http://mmbiz.qpic.cn/mmbiz/dhdQeNTHV5c6TRfP2lkOej8kvE6zAceszwicRB9TEB1zekQzzt6BiaFOnCtiaXv8uo76vbXBds4zjXibgma6qJmFxg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1" alt="">
-								</div>
-								<h4>切割机</h4>
-							</li>
-							<li class="fl">
-								<div class="course-list-img">
-									<div class="img-see"></div>
-									<img src="http://mmbiz.qpic.cn/mmbiz/dhdQeNTHV5c6TRfP2lkOej8kvE6zAcesnjlJKWHZrCib7HsA2LCVgQc8bSxceqk4EGwaCZ7QqLEdcARnWEWwVAg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1" alt="">
-								</div>
-								<h4>切割机</h4>
-							</li>
-							<li class="fl">
-								<div class="course-list-img">
-									<div class="img-see"></div>
-									<img src="http://mmbiz.qpic.cn/mmbiz/dhdQeNTHV5c6TRfP2lkOej8kvE6zAcesW9S8nu9mEJMyGaIEmYVlMzxv8CaWpzHpIiaKYueaMOWt2oNvxibex3HQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1" alt="">
-								</div>
-								<h4>切割机</h4>
+								<h4>{{item.title}}</h4>
 							</li>
 						</ul>
 					</div>
@@ -139,11 +118,25 @@
 				<!-- END 搜索产品部分 -->
 
 			</div>
+      <v-modal
+         v-if="isHide"
+         modal-title="产品详情"
+         ok-btn="确定"
+         cancel-btn="取消"
+         @on-ok="ok"
+         @on-cancel="cancel"
+         @close="modal.show = false"
+       >
+        <div slot="modal-content">
+          尊敬的用户，您购买的商品将于支付成功后3-7个工作日内发货，敬请周知。祝您购物愉快！
+        </div>
+      </v-modal>
 		</div>
 	</div>
 </template>
 <script>
 	import pagination from '@/components/others/pagination'
+  import modal from '@/components/others/modal'
 
 	export default{
 	    data () {
@@ -153,19 +146,24 @@
                 count : 150, //总记录数
                 items : [],
                 showUpTrangle: false,
+                sidemenu: null,
                 product: null,
                 hideIndex:[],
                 activeIndex: 10,
-                firstShow: 0
+                firstShow: 0,
+                isHide: false,
+                modal: {
+                    show: false
+                }
             }
         },
         methods : {
             //获取数据
-            getList () {
+            getMenu () {
             	// 模拟数据
             	let url = '../../../static/product/sideMenu.json';
             	this.$http.get(url).then(({data}) => {
-        			this.product = data.result;
+        			this.sidemenu = data.result;
             	})
                 // //模拟
                 // let url = `/api/list/?pageSize=${this.pageSize}&currentPage=${this.currentPage}`
@@ -184,32 +182,59 @@
                 this.getList()
             },
 
+            //获取列表数据
+            getList() {
+                // 模拟数据
+                let url = '../../../static/product/productList.json';
+                this.$http.get(url).then(({data}) => {
+                    this.product = data.result;
+                })
+            },
+
             showAnchors (i) {
             	this.firstShow = 1;
-        		//因为 JavaScript 的限制，Vue.js 不能直接对索引操作
-				//数组变动
-				if(this.hideIndex[i]) {
-					this.$set(this.hideIndex, i, false);
-				}else {
-					this.$set(this.hideIndex ,i, true);
-				}
+        		  //因为 JavaScript 的限制，Vue.js 不能直接对索引操作
+              //数组变动
+              if(this.hideIndex[i]) {
+                this.$set(this.hideIndex, i, false);
+              }else {
+                this.$set(this.hideIndex ,i, true);
+              }
             },
 
             toggleItem(i,j) {
             	// this.firstShow = 1;
-        		i=i||0;
+        		  i=i||0;
 	            j=j||0;
 	            this.activeIndex=i*10+j;
+            },
+            productDetails (e) {
+                console.log(e)
+                this.isHide = !this.isHide;
+            },
+            ok () {
+              alert("欢迎您购买本产品");
+            },
+            cancel () {
+              this.isHide = !this.isHide;
+            },
+            init () {
+              //请求第一页数据
+              this.getMenu()
+
+              //获取列表数据
+              this.getList()
+
             }
         },
         mounted() {
           this.$nextTick(function() {
-            //请求第一页数据
-            this.getList()
+            this.init()
           })
         },
 		  components: {
 	      	'v-pagination': pagination,
+          'v-modal': modal
 	    }
 	}
 </script>

@@ -1,0 +1,50 @@
+{
+  "code":0,
+  "result":[
+    {
+      "thumimg": "http://localhost:8080/src/assets/images/product/ceshi/20180112132748.jpg",
+      "title": "切割机",
+      "explain": "产品说明产品说明产品说明产品说明产品说明"
+    },
+    {
+      "thumimg": "http://localhost:8080/src/assets/images/product/ceshi/201801121327481.jpg",
+      "title": "切割机",
+      "explain": "产品说明产品说明产品说明产品说明产品说明"
+    },
+    {
+      "thumimg": "http://localhost:8080/src/assets/images/product/ceshi/201801121327482.jpg",
+      "title": "切割机",
+      "explain": "产品说明产品说明产品说明产品说明产品说明"
+    },
+    {
+      "thumimg": "http://localhost:8080/src/assets/images/product/ceshi/201801121327483.jpg",
+      "title": "切割机",
+      "explain": "产品说明产品说明产品说明产品说明产品说明"
+    },
+    {
+      "thumimg": "http://localhost:8080/src/assets/images/product/ceshi/201801121327484.jpg",
+      "title": "切割机",
+      "explain": "产品说明产品说明产品说明产品说明产品说明"
+    },
+    {
+      "thumimg": "http://localhost:8080/src/assets/images/product/ceshi/201801121327485.jpg",
+      "title": "切割机",
+      "explain": "产品说明产品说明产品说明产品说明产品说明"
+    },
+    {
+      "thumimg": "http://localhost:8080/src/assets/images/product/ceshi/201801121327486.jpg",
+      "title": "切割机",
+      "explain": "产品说明产品说明产品说明产品说明产品说明"
+    },
+    {
+      "thumimg": "http://localhost:8080/src/assets/images/product/ceshi/201801121327487.jpg",
+      "title": "切割机",
+      "explain": "产品说明产品说明产品说明产品说明产品说明"
+    },
+    {
+      "thumimg": "http://localhost:8080/src/assets/images/product/ceshi/201801121327488.jpg",
+      "title": "切割机",
+      "explain": "产品说明产品说明产品说明产品说明产品说明"
+    }
+  ]
+}
