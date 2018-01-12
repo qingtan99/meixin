@@ -120,6 +120,7 @@
 			</div>
       <v-modal
          v-if="isHide"
+         :modal-content="modal.text"
          modal-title="产品详情"
          ok-btn="确定"
          cancel-btn="取消"
@@ -127,9 +128,6 @@
          @on-cancel="cancel"
          @close="modal.show = false"
        >
-        <div slot="modal-content">
-          尊敬的用户，您购买的商品将于支付成功后3-7个工作日内发货，敬请周知。祝您购物愉快！
-        </div>
       </v-modal>
 		</div>
 	</div>
@@ -153,7 +151,8 @@
                 firstShow: 0,
                 isHide: false,
                 modal: {
-                    show: false
+                    show: false,
+                    text: "234234"
                 }
             }
         },
