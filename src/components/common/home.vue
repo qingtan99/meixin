@@ -4,7 +4,7 @@
     		<div class="head" v-if="!isShow" ref="head">
     	        <div class="w1200 fix">
     	            <a class="logo fl" href="/">
-    	            	<img src="https://flinkhub.com/assets/img/logo.png" alt="美畅logo">
+    	            	<img src="../../assets/logo.png" alt="美畅logo">
     	            </a>
     	            <ul class="nav fr fix">
     	                <li class="fl">

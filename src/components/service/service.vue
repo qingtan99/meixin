@@ -86,7 +86,7 @@
 <style scoped>
     .service-box {
         position: relative;
-        height: 420px;
+        height: 150px;
         background: url("http://www.reenoo.com/img/about/as2_dbg.jpg") no-repeat center center;
         background-size: cover;
     }
@@ -99,7 +99,7 @@
       position: absolute;
       left: -50px;
       left: 0 \9;
-      top: 265px;
+      top: 85px;
       color: #e9e9f2;
       font-size: 36px;
       z-index: 2;

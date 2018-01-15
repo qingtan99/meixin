@@ -57,7 +57,7 @@
 				<div class="product-wrap-list">
 					<div class="product-class-nav">
 						<ul class="fix">
-							<li class="fl" v-for="item in product"  @click="productDetails(this)">
+							<li class="fl" v-for="item in product"  @click="productDetails(item)">
 								<div class="course-list-img">
 									<div class="img-see"></div>
 									<img v-bind:src="item.thumimg" alt="">
@@ -120,7 +120,7 @@
 			</div>
       <v-modal
          v-if="isHide"
-         :modal-content="modal.text"
+         :modal-content="modal"
          modal-title="产品详情"
          ok-btn="确定"
          cancel-btn="取消"
@@ -128,6 +128,25 @@
          @on-cancel="cancel"
          @close="modal.show = false"
        >
+      <div slot="sContent" class="modal-content-wrap fix">
+        <div class="modal-img fl">
+          <a class="a-img" href="">
+            <img v-bind:src="modal.img" alt="">
+          </a>
+          <p>尺寸：<span>1570 x 1160 x 2075 mm³</span>（宽深高）</p>
+        </div>
+        <div class="modal-right fr">
+            <h3 class="title">AD50PLUS<small>全自动固晶机</small></h3>
+            <h4 class="featured">特色</h4>
+            <ul>
+                <li><i></i>可直接处理陶瓷基板</li>
+                <li><i></i>专利工艺及模组设计</li>
+                <li><i></i>独立控制取晶及固晶系统</li>
+                <li><i></i>配设 IQC 系统提供实时图示式统计数据</li>
+            </ul>
+            <router-link to="/contact_mc" target="_blank">立即咨询</router-link>
+        </div>
+      </div>
       </v-modal>
 		</div>
 	</div>
@@ -152,7 +171,8 @@
                 isHide: false,
                 modal: {
                     show: false,
-                    text: "234234"
+                    text: null,
+                    img: null
                 }
             }
         },
@@ -208,8 +228,9 @@
 	            this.activeIndex=i*10+j;
             },
             productDetails (e) {
-                console.log(e)
                 this.isHide = !this.isHide;
+                this.modal.img = e.thumimg;
+                this.modal.text = e.explain;
             },
             ok () {
               alert("欢迎您购买本产品");

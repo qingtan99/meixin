@@ -6,25 +6,9 @@
             <div class="modal-header">
               <h4>{{ modalTitle }}</h4>
             </div>
-            <div class="modal-content-wrap fix">
-                <div class="modal-img">
-                    <a class="a-img" href=""></a>
-                    <ul class="fix">
-                      <li class="fl">
-                          <a href="javascript:;"></a>
-                      </li>
-                      <li class="fl">
-                          <a href="javascript:;"></a>
-                      </li>
-                      <li class="fl">
-                          <a href="javascript:;"></a>
-                      </li>
-                      <li class="fl">
-                          <a href="javascript:;"></a>
-                      </li>
-                    </ul>
-                </div>
-            </div>
+            <slot name="sContent">
+
+            </slot>
             <div class="modal-footer">
               <input class="btn" type="button" v-model="cancelBtn" @click="cancelHandle" />
             </div>
@@ -58,8 +42,7 @@
         default: '取消'
       },
       modalContent: {
-          type: String,
-          default: "默认文本"
+          type: Object
       }
     },
     methods : {
@@ -100,7 +83,7 @@
 
   .modal {
     position: relative;
-    min-height: 600px;
+    min-height: 535px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 6px;
@@ -109,7 +92,7 @@
   }
 
   .modal.w {
-    width: 1200px;
+    width: 890px;
   }
 
   .modal-header {
@@ -121,35 +104,94 @@
   }
   .modal-content-wrap {
       padding: 15px 10px 59px 10px;
+      height: 410px;
   }
 
-  .modal-content-wrap .modal-img {
+  .modal-content-wrap .modal-img,
+  .modal-content-wrap .modal-right {
+      position: relative;
       width: 50%;
-      height: 485px;
+      height: 100%;
+  }
+
+  .modal-right h3 {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: .9;
+  }
+
+  .modal-right h3 small {
+      display: block;
+      margin-bottom: 30px;
+      margin-top: 7px;
+      font-size: 65%;
+      color: #777;
+  }
+
+  .modal-right h4.featured {
+      width: 50px;
+      padding: 2px 5px;
+      color: #0991CE;
+      text-align: center;
+      font-size: 14px;
+      background: rgba(9,145,206,0.1);
+  }
+
+  .modal-right a {
+      position: absolute;
+      bottom: 48px;
+      left: 0;
+      display: inline-block;
+      padding: 0px 20px 0px 20px;
+      line-height: 32px;
+      color: #fff;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      background: #17b1f7;
+      border: 1px solid #17b1f7;
+  }
+
+  .modal-right ul {
+      margin: 10px 0;
+      max-height: 232px;
+      overflow: hidden;
+  }
+
+  .modal-right ul li {
+      position: relative;
+      padding: 5px 0px 5px 25px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+
+  .modal-right ul li i {
+      position: absolute;
+      top: 0;
+      left:0;
+      display: block;
+      width: 29px;
+      height: 29px;
+      background: url("../../assets/images/product/feature-tick.png") no-repeat left center;
+      background-size: 50%;
   }
 
   .modal-content-wrap .modal-img .a-img {
       display: block;
       width: 400px;
-      height: 395px;
+      height: 360px;
       border: 1px solid rgba(0,0,0,.05);
   }
 
-  .modal-img ul li {
-      display: inline-block;
-      margin: 0 0 0 25px;
-      padding-top: 12px;
+  .modal-img p {
+      padding: 15px 5px;
   }
 
-  .modal-img ul li a {
-      display: inline-block;
-      border: 2px solid rgba(0,0,0,0);
-      width: 63px;
-      height: 63px;
-  }
-
-  .modal-img ul li a:hover {
-      border: 2px solid #000;
+  .modal-img p span {
+    color: #333;
+    font-style: italic;
+    margin-left: 10px;
+    font-weight: 600;
   }
 
   .modal-footer {

@@ -31,13 +31,13 @@
 	    	</div>
 	    </div>
 
-	    <!-- 最新设备 -->
+	    <!-- 在售设备 -->
 	    <div class="brief-intro-container">
 	    	<div class="brief-intro-content w1200">
 	    		<div class="brief-intro-text-wrap">
 	    			<div class="brief-intro-title">
 	    				<span></span>
-	    				<h3>最新设备</h3>
+	    				<h3>在售设备</h3>
 	    			</div>
 	    			<div class="brief-intro-nav">
 	    				<ul class="fix">
@@ -73,7 +73,7 @@
 	    		</div>
 	    	</div>
 	    </div>
-	    <!-- END 最新设备 -->
+	    <!-- END 在售设备 -->
 
 	    <!-- 公司介绍 -->
 	    <div class="about-company-container">
@@ -103,6 +103,51 @@
 	    	</div>
 	    </div>
 	    <!-- END 公司介绍 -->
+
+      <!--合作客户-->
+      <div class="cooperative-customers-container">
+          <div class="cooperative-customers-content">
+              <div class="cooperative-customers-wrap w1200">
+                  <div class="brief-intro-title">
+                    <span></span>
+                    <h3>合作客户</h3>
+                  </div>
+                  <ul class="fix">
+                    <li>
+                        <img src="../../assets/images/brief/1.png" alt="">
+                    </li>
+                    <li>
+                      <img src="../../assets/images/brief/2.png" alt="">
+                    </li>
+                    <li>
+                      <img src="../../assets/images/brief/3.png" alt="">
+                    </li>
+                    <li>
+                      <img src="../../assets/images/brief/4.png" alt="">
+                    </li>
+                    <li>
+                      <img src="../../assets/images/brief/5.png" alt="">
+                    </li>
+                    <li>
+                      <img src="../../assets/images/brief/6.jpg" alt="">
+                    </li>
+                    <li>
+                      <img src="../../assets/images/brief/7.png" alt="">
+                    </li>
+                    <li>
+                      <img src="../../assets/images/brief/8.png" alt="">
+                    </li>
+                    <li>
+                      <img src="../../assets/images/brief/9.gif" alt="">
+                    </li>
+                    <li>
+                      <img src="../../assets/images/brief/10.jpg" alt="">
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <!--END 合作客户-->
     </div>
 </template>
 <script>
@@ -254,7 +299,7 @@
 	}
 
 	.brief-intro-nav ul {
-		padding-top: 80px;
+		padding-top: 40px;
 		width: 100%;
 	}
 
@@ -325,15 +370,16 @@
 	.about-company-container .about-company-content {
 		width: 100%;
 		height: auto;
+    overflow: hidden;
 		position: relative;
 	}
 
 	.about-company-content .about-con-cont-wrap {
-		height: 500px;
 		position: absolute;
 		top: 50px;
 		left: 0;
 		right: 0;
+    bottom: 50px;
 		margin: 0 auto;
 		color: #666;
 		overflow: hidden;
@@ -405,4 +451,34 @@
 		line-height: 1.8;
 		font-size: 14px;
 	}
+
+  .cooperative-customers-content {
+      margin-top: 70px;
+  }
+
+  .cooperative-customers-wrap .brief-intro-title {
+      position: relative;
+      text-align: center;
+  }
+
+  .cooperative-customers-wrap ul {
+      margin: 40px 0;
+      width: 1214px;
+  }
+
+  .cooperative-customers-wrap ul li {
+      width: 130px;
+      height: 130px;
+      line-height: 130px;
+      text-align: center;
+      margin-bottom: 4px;
+      float: left;
+      margin-right: 4px;
+      background: #fff;
+  }
+
+  .cooperative-customers-wrap ul li img {
+      width: auto;
+      height: auto;
+  }
 </style>
