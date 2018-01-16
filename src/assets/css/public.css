@@ -117,12 +117,15 @@ img{
 .w1200 {
     width: 1200px;
     height: 100%;
+    position: relative;
     margin: 0 auto;
 }
 
 .head .logo {
-    height: 30px;
-    width: 112px;
+  position: absolute;
+  top: -25px;
+  height: 70px;
+  width: 340px;
 }
 
 

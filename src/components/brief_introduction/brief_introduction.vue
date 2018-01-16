@@ -43,7 +43,7 @@
 	    				<ul class="fix">
 	    					<li class="fl">
 	    						<div class="nav-img">
-	    							<img src="http://14507334.s61i.faiusr.com/2/AD0Ixrr1BhACGAAg7p_wzAUorsP81AQwpAI42AE.jpg" alt="">
+	    							<img src="../../assets/images/product/ceshi/20180112132748.jpg" alt="">
 	    						</div>
 	    						<div class="nav-content-wrap">
     								<h4>搬运车地牛液压车</h4>
@@ -52,7 +52,7 @@
 	    					</li>
 	    					<li class="fl">
 	    						<div class="nav-img">
-	    							<img src="http://14507334.s61i.faiusr.com/2/AD0Ixrr1BhACGAAg7p_wzAUorsP81AQwpAI42AE.jpg" alt="">
+	    							<img src="../../assets/images/product/ceshi/201801121327481.jpg" alt="">
 	    						</div>
 	    						<div class="nav-content-wrap">
     								<h4>搬运车地牛液压车</h4>
@@ -61,7 +61,7 @@
 	    					</li>
 	    					<li class="fl">
 	    						<div class="nav-img">
-	    							<img src="http://14507334.s61i.faiusr.com/2/AD0Ixrr1BhACGAAg7p_wzAUorsP81AQwpAI42AE.jpg" alt="">
+	    							<img src="../../assets/images/product/ceshi/201801121327482.jpg" alt="">
 	    						</div>
 	    						<div class="nav-content-wrap">
     								<h4>搬运车地牛液压车</h4>

@@ -1,16 +1,22 @@
 <template>
   <div>
       <div class="ivu-modal-wrap">
-          <div class="ivu-modal-mask" @click="mask"></div>
+          <div class="ivu-modal-mask" v-model="cancelBtn" @click="cancelHandle"></div>
           <div class="modal w">
             <div class="modal-header">
               <h4>{{ modalTitle }}</h4>
+              <i class="icon iconfont icon-guanbi" title="关闭" v-model="cancelBtn" @click="cancelHandle"></i>
             </div>
             <slot name="sContent">
 
             </slot>
-            <div class="modal-footer">
-              <input class="btn" type="button" v-model="cancelBtn" @click="cancelHandle" />
+            <div class="modal-footer fix">
+                <div class="fl">上一篇
+                    <span>1</span>
+                </div>
+              <div class="fr">下一篇
+                    <span>2</span>
+              </div>
             </div>
           </div>
       </div>
@@ -96,12 +102,25 @@
   }
 
   .modal-header {
+    position: relative;
     color: #495060;
     background: #fff;
     border-radius: 6px 6px 0 0;
     padding: 15px;
     border-bottom: 1px solid #e9eaec;
   }
+
+  .modal-header .icon-guanbi {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+  }
+
+  .modal-header .icon-guanbi:hover {
+      color: #17b1f7;
+  }
+
   .modal-content-wrap {
       padding: 15px 10px 59px 10px;
       height: 410px;
@@ -202,6 +221,14 @@
     padding: 15px;
     text-align: right;
     border-top: 1px solid #e5e5e5;
+  }
+
+  .modal-footer div {
+      cursor: pointer;
+  }
+
+  .modal-footer div:hover {
+    color: #17b1f7;
   }
 
   .btn {

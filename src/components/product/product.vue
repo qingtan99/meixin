@@ -62,7 +62,7 @@
 									<div class="img-see"></div>
 									<img v-bind:src="item.thumimg" alt="">
 								</div>
-								<h4>{{item.title}}</h4>
+								<h4>{{item.model}} - {{item.name}}</h4>
 							</li>
 						</ul>
 					</div>
@@ -120,7 +120,7 @@
 			</div>
       <v-modal
          v-if="isHide"
-         :modal-content="modal"
+         :modal-content="modalText"
          modal-title="产品详情"
          ok-btn="确定"
          cancel-btn="取消"
@@ -131,18 +131,15 @@
       <div slot="sContent" class="modal-content-wrap fix">
         <div class="modal-img fl">
           <a class="a-img" href="">
-            <img v-bind:src="modal.img" alt="">
+            <img v-bind:src="modalText.thumimg" alt="">
           </a>
-          <p>尺寸：<span>1570 x 1160 x 2075 mm³</span>（宽深高）</p>
+          <p>尺寸：<span>{{modalText.size}}</span>（宽深高）</p>
         </div>
         <div class="modal-right fr">
-            <h3 class="title">AD50PLUS<small>全自动固晶机</small></h3>
+            <h3 class="title">{{modalText.model}}<small>{{modalText.name}}</small></h3>
             <h4 class="featured">特色</h4>
             <ul>
-                <li><i></i>可直接处理陶瓷基板</li>
-                <li><i></i>专利工艺及模组设计</li>
-                <li><i></i>独立控制取晶及固晶系统</li>
-                <li><i></i>配设 IQC 系统提供实时图示式统计数据</li>
+                <li v-for="value in modalText.explain"><i></i>{{value.chara}}</li>
             </ul>
             <router-link to="/contact_mc" target="_blank">立即咨询</router-link>
         </div>
@@ -167,13 +164,9 @@
                 product: null,
                 hideIndex:[],
                 activeIndex: 10,
-                firstShow: 0,
+                open: false,
                 isHide: false,
-                modal: {
-                    show: false,
-                    text: null,
-                    img: null
-                }
+                modalText: null
             }
         },
         methods : {
@@ -211,7 +204,6 @@
             },
 
             showAnchors (i) {
-            	this.firstShow = 1;
         		  //因为 JavaScript 的限制，Vue.js 不能直接对索引操作
               //数组变动
               if(this.hideIndex[i]) {
@@ -222,15 +214,13 @@
             },
 
             toggleItem(i,j) {
-            	// this.firstShow = 1;
         		  i=i||0;
 	            j=j||0;
 	            this.activeIndex=i*10+j;
             },
             productDetails (e) {
                 this.isHide = !this.isHide;
-                this.modal.img = e.thumimg;
-                this.modal.text = e.explain;
+                this.modalText = e;
             },
             ok () {
               alert("欢迎您购买本产品");
