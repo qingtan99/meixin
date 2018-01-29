@@ -32,7 +32,7 @@
         <h1>联系我们</h1>
         <div class="others-content">
             <div class="others-content-note">
-                <p>您可以发送电子邮件至：meichang202@126.com。</p>
+                <p>您可以发送电子邮件至：meixin202@126.com。</p>
                 <p>我们很想听到您的声音！或者直接填写下面的表格</p>
             </div>
 
@@ -67,7 +67,7 @@
                         QQ：1141030009
                     </p>
                     <p>
-                        邮箱：<a class="mail" href="Mailto:meichang202@126.com">meichang202@126.com</a>
+                        邮箱：<a class="mail" href="Mailto:meixin202@126.com">meixin202@126.com</a>
                     </p>
                     <p>
                         <b>办公地点</b>

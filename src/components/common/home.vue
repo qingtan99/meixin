@@ -20,13 +20,12 @@
     	                	<router-link to="/service">服务</router-link>
                     	</li>
     	                <li class="fl">
-    	                	<router-link to="/contact_mc">联系美畅</router-link>
+    	                	<router-link to="/contact_mc">联系美芯</router-link>
                     	</li>
                     	<li class="lang-pre fl">
                     		<a href="javascript:;">中/EN</a>
                     		<div class="nav-lang-box">
                     			<span>中文简体</span>
-                    			<span>中文繁体</span>
                     			<span>English</span>
                     		</div>
                 		</li>
@@ -66,7 +65,7 @@
 					<router-link to="/contact_mc">联系我们</router-link><i>|</i>
 					<router-link to="/friendlink">友情链接</router-link>
 	    		</nav>
-	    		<div class="copyright">Copyright © 2017 meichang.com All Rights Reserved. 粤ICP备11018032号</div>
+	    		<div class="copyright">Copyright © 2018 mx-semi.cn All Rights Reserved</div>
 	    	</div>
 	    </div>
 	</div>
@@ -158,12 +157,12 @@
 }
 
 .nav-lang-box {
-    width: 185px;
-    height: 56px;
+    width: 121px;
+    height: 50px;
     padding: 0 15px;
     position: absolute;
     top: 49px;
-    right: -38px;
+    right: 0px;
     background: rgba(0, 0, 0, .5);
     overflow: hidden;
     opacity: 0;
@@ -177,7 +176,7 @@
 	margin: 0 8px;
 	font-size: 12px;
 	color: #c8cdd2;
-	line-height: 56px;
+	line-height: 50px;
 	transition: all .5s;
 	cursor: pointer;
 }

@@ -10,14 +10,6 @@
             <slot name="sContent">
 
             </slot>
-            <div class="modal-footer fix">
-                <div class="fl">上一篇
-                    <span>1</span>
-                </div>
-              <div class="fr">下一篇
-                    <span>2</span>
-              </div>
-            </div>
           </div>
       </div>
   </div>
@@ -89,7 +81,7 @@
 
   .modal {
     position: relative;
-    min-height: 535px;
+    min-height: 440px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 6px;
@@ -122,7 +114,7 @@
   }
 
   .modal-content-wrap {
-      padding: 15px 10px 59px 10px;
+      padding: 15px 10px 10px 10px;
       height: 410px;
   }
 
