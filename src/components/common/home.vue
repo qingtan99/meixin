@@ -91,7 +91,9 @@
 
 	    	//返回顶部
 	    	goToTop() {
+                //仅仅设置 document.body 可能会有兼容性问题
 	    		document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0
 	    	}
 		},
 		mounted() {
