@@ -11,11 +11,39 @@ const service = resolve => require(['@/components/service/service'], resolve)   
 const contactMc = resolve => require(['@/components/contact_mc/contact_mc'], resolve)     //联系我们
 const join = resolve => require(['@/components/join/join'], resolve)     //加入我们
 const friendlink = resolve => require(['@/components/friendlink/friendlink'], resolve)     //友情链接
+const NotFoundComponent = resolve => require(['@/components/common/home'], resolve)
 
 Vue.use(Router)
+// 3 如何保证在最顶部
+// 3.0 路由每次进入详情，默认滚动在最顶部
+const scrollBehavior = (to, from, savedPosition) => {
+  if (savedPosition) {
+    // savedPosition is only available for popstate navigations.
+    return savedPosition
+  } else {
+    const position = {}
+    // new navigation.
+    // scroll to anchor by returning the selector
+    if (to.hash) {
+      position.selector = to.hash
+    }
+    // check if any matched route config has meta that requires scrolling to top
+    if (to.matched.some(m => m.meta.scrollToTop)) {
+      // cords will be used if no selector is provided,
+      // or if the selector didn't match any element.
+      position.x = 0
+      position.y = 0
+    }
+    // if the returned position is falsy or an empty object,
+    // will retain current scroll position.
+    // console.log(position)
+    return position
+  }
+}
 
 export default new Router({
-    mode: 'history',
+    mode: 'hash',
+    scrollBehavior,
     routes: [
         {
         	path: '/',
@@ -25,12 +53,18 @@ export default new Router({
               {
                   path: '/',
                   name: 'briefIntroduction',
-                  component: briefIntroduction
+                  component: briefIntroduction,
+                  meta: {
+                    scrollToTop: true
+                  }
               },
               {
                   path: '/product',
                   name: 'product',
-                  component: product
+                  component: product,
+                  meta: {
+                    scrollToTop: true
+                  }
               },
               {
                   path: '/about',
@@ -40,31 +74,47 @@ export default new Router({
                       {
                           path: '/',
                           name: 'aboutinfo',
-                          component: aboutinfo
+                          component: aboutinfo,
+                          meta: {
+                            scrollToTop: true
+                          }
                       },
                       {
                         path:'/join',
                         name:'join',
-                        component:join
+                        component:join,
+                        meta: {
+                          scrollToTop: true
+                        }
                       },
                       {
                         path: '/contact_mc',
                         name: 'contact_mc',
-                        component: contactMc
+                        component: contactMc,
+                        meta: {
+                          scrollToTop: true
+                        }
                       },
                       {
                         path: '/friendlink',
                         name: 'friendlink',
-                        component: friendlink
+                        component: friendlink,
+                        meta: {
+                          scrollToTop: true
+                        }
                       }
                   ]
               },
               {
                   path: '/service',
                   name: 'service',
-                  component: service
+                  component: service,
+                  meta: {
+                      scrollToTop: true
+                  }
               }
         	]
-        }
+        },
+        { path: '*', component: NotFoundComponent }
    ]
 })
