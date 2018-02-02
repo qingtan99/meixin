@@ -73,7 +73,8 @@
 //      锚点定位
       goAnchor(selector) {
           let md = this.$el.querySelector(selector)
-        document.body.scrollTop = md.offsetTop
+          document.body.scrollTop = md.offsetTop;
+          document.documentElement.scrollTop = md.offsetTop
       }
     },
     mounted() {

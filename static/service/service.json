@@ -3,44 +3,44 @@
   "result":[
     {
       "serviceName": "设备维修",
-      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
-      "img": "https://flinkhub.com/assets/img/learn.png",
+      "icon": "static/service/icon/weixiu.png",
+      "img": "static/service/img/learn.png",
       "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
     },
     {
       "serviceName": "设备翻新",
-      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
-      "img": "https://flinkhub.com/assets/img/learn.png",
+      "icon": "static/service/icon/fanxin.png",
+      "img": "static/service/img/feedback.png",
       "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
     },
     {
       "serviceName": "备件维修",
-      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
-      "img": "https://flinkhub.com/assets/img/learn.png",
+      "icon": "static/service/icon/weixiu.png",
+      "img": "static/service/img/list.png",
       "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
     },
     {
       "serviceName": "购买",
-      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
-      "img": "https://flinkhub.com/assets/img/learn.png",
+      "icon": "static/service/icon/goumai.png",
+      "img": "static/service/img/money.png",
       "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
     },
     {
       "serviceName": "设备改造",
-      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
-      "img": "https://flinkhub.com/assets/img/learn.png",
+      "icon": "static/service/icon/gaizao.png",
+      "img": "static/service/img/connect.png",
       "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
     },
     {
       "serviceName": "设备移机",
-      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
-      "img": "https://flinkhub.com/assets/img/learn.png",
+      "icon": "static/service/icon/yiji.png",
+      "img": "static/service/img/dealdone.png",
       "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
     },
     {
       "serviceName": "设备研发",
-      "icon": "http://a1.jikexueyuan.com/home/201707/04/5f32/595b876537116.png",
-      "img": "https://flinkhub.com/assets/img/learn.png",
+      "icon": "static/service/icon/yanfa.png",
+      "img": "static/service/img/welcome.png",
       "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
     }
   ]

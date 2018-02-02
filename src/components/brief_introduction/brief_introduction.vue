@@ -84,7 +84,8 @@
 	    					<div class="brief-intro-title">
 			    				<span></span>
 			    				<h3>公司介绍</h3>
-			    				<p class="text-wrap">30多年生产经验，产品贯穿每一个行业，覆盖每一个工业城市,我们生产的机械市场性价比最高，赢得广大客户嘉许。30多年生产经验，产品贯穿每一个行业，覆盖每一个工业城市,我们生产的机械市场性价比最高，赢得广大客户嘉许</p>
+			    				<p class="text-wrap">美芯半导体设备有限公司位于广东省东莞市，自成立以来一直致深耕于国内二手半导体设备市场，二十年的发展历史，使公司在行业界具有一定的知名度。</p>
+                  <p class="text-wrap">公司秉着为客户创造价值的理念，积极发挥公司专业性、资源性及国际视野的优势，致力于为客户优化投资成本及提供配套产品的解决方案。</p>
 			    			</div>
 
 			    			<div class="float-btn-box">
@@ -93,8 +94,7 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="about-company-t fl">
-	    			<img src="http://14507334.s61i.faiusr.com/2/AD0Ixrr1BhACGAAg952wzAUo0MeuwgYwgA849AM.jpg" alt="">
+	    		<div class="about-company-t com-bg fl">
 	    			<span class="ri-bg-w"></span>
 	    		</div>
 	    		<div class="about-company-t fr">
@@ -393,12 +393,12 @@
 	.about-con-text {
 		position: absolute;
 		top: 80px;
-		right: 0;
+		right: 30px;
 		width: 560px;
 	}
 
 	.about-con-text .float-btn-box {
-		margin-top: 55px;
+		margin-top: 35px;
 	}
 
 	.float-btn-box a {
@@ -424,8 +424,13 @@
 		position: relative;
 		width: 50%;
 		height: 475px;
-		background: #fff;
+    background: #fff;
 	}
+
+  .about-company-t.com-bg {
+    background: url("../../assets/images/brief/company.jpg") no-repeat;
+    background-size: cover;
+  }
 
 	.about-company-t .ri-bg-w {
 		position: absolute;
@@ -447,7 +452,7 @@
 	}
 
 	.text-wrap {
-		padding-top: 30px;
+		padding-top: 10px;
 		line-height: 1.8;
 		font-size: 14px;
 	}

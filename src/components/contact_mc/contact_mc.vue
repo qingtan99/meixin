@@ -38,23 +38,21 @@
 
             <div class="others-content-row fix">
                 <div class="others-content-left fl">
-                  <form action="">
                       <div class="form-group">
-                          <input class="form-control" type="text" placeholder="姓名（必填）">
+                          <input ref="userName" class="form-control" type="text" placeholder="姓名（必填）">
                       </div>
                       <div class="form-group">
-                          <input class="form-control" type="text" placeholder="电话（必填）">
+                          <input ref="userPhone" class="form-control" type="text" placeholder="电话（必填）">
                       </div>
                       <div class="form-group">
-                          <input class="form-control" type="text" placeholder="邮箱">
+                          <input ref="email" class="form-control" type="text" placeholder="邮箱">
                       </div>
                       <div class="form-group">
-                          <textarea class="form-control ly" type="text" placeholder="请在此输入留言内容，我们会尽快与您联系。（必填）"></textarea>
+                          <textarea ref="message" class="form-control ly" type="text" placeholder="请在此输入留言内容，我们会尽快与您联系。（必填）"></textarea>
                       </div>
                     <div class="form-group">
-                          <button type="button">发送</button>
+                          <button type="button" @click="role">发送</button>
                     </div>
-                  </form>
                 </div>
                 <div class="others-content-right fr">
                     <p>
@@ -80,14 +78,43 @@
   </div>
 </template>
 <script>
-	import mapTemp from './map.vue'
-
+//	import mapTemp from './map.vue'
 	export default {
-		components: {
-		    mapTemp
-	    },
 	    methods: {
-
+		      role () {
+		          const parm = {
+                  userName: this.$refs.userName.value,   //用户名
+                  userPhone: this.$refs.userPhone.value, //电话
+                  email: this.$refs.email.value, //邮箱
+                  message: this.$refs.message.value //留言内容
+              };
+              if(!parm.userName) {
+                  alert("请输入用户名！");
+                  return false;
+              }
+              else if(!parm.userPhone){
+                  alert("请输入电话号码！");
+                  return false;
+              }
+              else if(!parm.message) {
+                  alert("请输入留言内容！");
+                  return false;
+              }else {
+                  this.postMessage(parm);
+              }
+          },
+          postMessage (parm) {
+              let url = 'http://39.108.118.8:81/index/api/message';
+              this.$http.post(url, {name: parm.userName, phone: parm.userPhone, email: parm.email, content: parm.message}).then(({data}) => {
+                  if(data.code === 0) {
+                      this.$refs.userName.value = "";
+                      this.$refs.userPhone.value = "";
+                      this.$refs.email.value = "";
+                      this.$refs.message.value = "";
+                      alert("留言成功！我们将尽快与您取得联系...");
+                  }
+              });
+          }
 	  	}
 	}
 </script>

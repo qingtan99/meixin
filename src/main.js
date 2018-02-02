@@ -4,8 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueResource  from 'vue-resource'
-import VueAwesomeSwiper from 'vue-awesome-swiper'
+import VueAwesomeSwiper from 'vue-awesome-swiper'     //轮播
 
+import './assets/css/swiper/animate.min.css'
 import './assets/css/public.css'
 Vue.use(VueAwesomeSwiper)	//使用轮播组件
 Vue.use(VueResource)
