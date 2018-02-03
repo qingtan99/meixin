@@ -20,7 +20,7 @@
       "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
     },
     {
-      "serviceName": "购买",
+      "serviceName": "设备回收",
       "icon": "static/service/icon/goumai.png",
       "img": "static/service/img/money.png",
       "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
@@ -29,12 +29,6 @@
       "serviceName": "设备改造",
       "icon": "static/service/icon/gaizao.png",
       "img": "static/service/img/connect.png",
-      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
-    },
-    {
-      "serviceName": "设备移机",
-      "icon": "static/service/icon/yiji.png",
-      "img": "static/service/img/dealdone.png",
       "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
     },
     {

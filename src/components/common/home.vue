@@ -36,9 +36,9 @@
 	    <div class="main-content">
 	    	<router-view></router-view>
 	    	<div class="scroll-top">
-          <a class="ele" href="javascript:;">
-            <i class="icon iconfont icon-QQ"></i>
-            <span>QQ咨询</span>
+          <a class="ele" href="http://wpa.qq.com/msgrd?v=3&uin=2281157930&site=qq&menu=yes" target="_blank">
+              <i class="icon iconfont icon-QQ"></i>
+              <span>QQ咨询</span>
           </a>
 	    		<a class="ele" href="javascript:;">
 	    			<i class="icon iconfont icon-wxgzh"></i>
@@ -236,7 +236,7 @@
     width: 172px;
     height: 212px;
     bottom: 0px;
-    right: 43px;
+    right: 42px;
     -webkit-transition: opacity .25s,transform .3s;
     -moz-transition: opacity .25s,transform .3s;
     transition: opacity .25s,transform .3s;

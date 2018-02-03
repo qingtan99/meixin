@@ -35,7 +35,7 @@
 						<p class="contact-note">欢迎您来电咨询产品信息，请确认咨询时间，以免耽误。</p>
 						<div class="contact-infor">
 							<p><i class="icon-tele"></i><span>0769-85323589</span></p>
-							<p><i class="icon-qq"></i><span>1141030009</span></p>
+							<p><i class="icon-qq"></i><span>2281157930</span></p>
 							<p><i class="icon iconfont icon-wroktime"></i><span>9:00-18:00</span></p>
 							<p class="time-note">（星期天/国家公休日 休息）</p>
 							<p><i class="icon-weixin"></i><span>关注微信公众号：</span></p>
