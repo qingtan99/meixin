@@ -5,37 +5,43 @@
       "serviceName": "设备维修",
       "icon": "static/service/icon/weixiu.png",
       "img": "static/service/img/learn.png",
-      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+      "text": "针对设备故障，安排专业的维修人员上门，分析设备故障原因，提出解决方案，根据客户要求实行方案"
     },
     {
       "serviceName": "设备翻新",
       "icon": "static/service/icon/fanxin.png",
       "img": "static/service/img/feedback.png",
-      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+      "text": "针对工作中、外观老旧、想翻新的设备。可派技术员上门，进行设备翻新与保养。"
     },
     {
-      "serviceName": "备件维修",
+      "serviceName": "配件维修",
       "icon": "static/service/icon/weixiu.png",
       "img": "static/service/img/list.png",
-      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+      "text": "针对设备配件损坏，分析是否能修复，制定维修配件方案或更换配件方案，根据客户要求实行方案"
     },
     {
       "serviceName": "设备回收",
       "icon": "static/service/icon/goumai.png",
       "img": "static/service/img/money.png",
-      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+      "text": "针对客户公司淘汰或停止使用的设备，派专员现场查看设备，制定报价单，制定合同，按照双方规定条款回收设备。"
     },
     {
       "serviceName": "设备改造",
       "icon": "static/service/icon/gaizao.png",
       "img": "static/service/img/connect.png",
-      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+      "text": "针对需升级或更新生产线的公司，分析设备是否可改造升级，派专员现场查看设备，根据客户要求制定改造计划并实施。"
     },
     {
       "serviceName": "设备研发",
       "icon": "static/service/icon/yanfa.png",
       "img": "static/service/img/welcome.png",
-      "text": "可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障，可安排人员到客户公司，提供设备维修服务，并可以和客户交流指导如何处理设备故障"
+      "text": "针对特殊产品或工艺且现有设备无法满足的实现的，根据客户产品参数及要，派专业的工程师研究探讨，设计及研发一款针对客户要求的设备。"
+    },
+    {
+      "serviceName": "人员培训",
+      "icon": "static/service/icon/yanfa.png",
+      "img": "static/service/img/welcome.png",
+      "text": "针对购买设备但无人会操作的公司，我司可派专人现场指导授课，进行培训，保证客户公司的人员能正常操作且投入生产。"
     }
   ]
 }

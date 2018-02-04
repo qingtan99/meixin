@@ -2,119 +2,63 @@
   "code":0,
   "result":[
     {
-      "thumimg": "http://www1.asmpacific.com/images/products/AB550.png",
-      "name":"全自动超声波焊线机",
-      "model":"AB550",
-      "size": "1,020 x 850 x 1,350mm",
-      "explain": [
-        {"chara": "高速焊线能力"},
-        {"chara": "微距焊接能力"},
-        {"chara": "最小焊位尺寸︰63 µm x 80 µm*"},
-        {"chara": "最小焊位间距︰68 µm*"},
-        {"chara": "崭新工作台设计，令焊线更快、更準、更稳"}
+      "typeName":"切割设备",
+      "typeId":1,
+      "data":[
+        {
+          "name":"切割机",
+          "model":"A-WD-300T",
+          "years":"2001",
+          "number": "3",
+          "manu": "DISCO",
+          "size": "暂无数据",
+          "imgs":[
+            {
+              "image":"static/product/img/qiege/A-WD-300T-1.jpg"
+            },
+            {
+              "image":"static/product/img/qiege/A-WD-300T-2.jpg"
+            }
+          ]
+        }
       ]
     },
     {
-      "thumimg": "http://www1.asmpacific.com/images/products/image20.png",
-      "name":"全自动共晶固晶系统",
-      "model":"AD211 Plus",
-      "size": "2,080 x 1,270 x 2,080 mm³",
-      "explain": [
-        {"chara": "可直接处理陶瓷基板"},
-        {"chara": "专利工艺及模组设计"},
-        {"chara": "独立控制取晶及固晶系统"},
-        {"chara": "配设 IQC 系统提供实时图示式统计数据"},
-        {"chara": "设有预热区及降温区以防止热冲击"},
-        {"chara": "提供无氧固晶环境"}
-      ]
-    },
-    {
-      "thumimg": "http://www1.asmpacific.com/images/products/image16.png",
-      "name":"全自动固晶系統 (6” 晶圆处理)",
-      "model":"AD830 Plus",
-      "size": "1,740 x 1,240 x 2,080mm³",
-      "explain": [
-        {"chara": "专利焊头设计"},
-        {"chara": "高密度引线框架处理能力 "},
-        {"chara": "採用排列式光学系统，进一步提升固晶速度"},
-        {"chara": "配置白光 LED 照明的全彩摄像机，可处理不同基材"},
-        {"chara": "卷带式物料处理能力 (只适用于 AD830Plus-R)"},
-        {"chara": "8” 晶圆处理能力 (选项)"}
-      ]
-    },
-    {
-      "thumimg": "http://www1.asmpacific.com/images/products/image16.png",
-      "name":"全自动固晶机",
-      "model":"AD830P-Plus",
-      "size": "1,740 x 1,240 x 2,080mm³",
-      "explain": [
-        {"chara": "高速、高精度固晶"},
-        {"chara": "复晶 LED 处理能力"},
-        {"chara": "崭新图像识别系统"},
-        {"chara": "'PR On The Fly' 上视式图像识别能力，既可提高固晶位置精度，又不失固晶週期时间"},
-        {"chara": "选项: 下视式镜头，為晶片作双面图像检测"},
-        {"chara": "实现工厂自动化"}
-      ]
-    },
-    {
-      "thumimg": "http://www1.asmpacific.com/images/products/image16.png",
-      "name":"全自动固晶机",
-      "model":"AD50PLUS",
-      "size": "1570 x 1160 x 2075 mm³",
-      "explain": [
-        {"chara": "高速高精度固晶"},
-        {"chara": "双焊头系统"},
-        {"chara": "全自动物料处理能力"},
-        {"chara": "叠片式入料 (选项)"},
-        {"chara": "自动装卸晶圆系统 (选项)"},
-        {"chara": "多功能图像识别系统"},
-        {"chara": "Windows® 作业系统及图像用户介面"}
-      ]
-    },
-    {
-      "thumimg": "http://www1.asmpacific.com/images/LS100-2.png",
-      "name":"全自动雷射切割系统",
-      "model":"LS100-2",
-      "size": "1450 x 1975 x 2062 mm³",
-      "explain": [
-        {"chara": "专门切割蓝宝石基材或金属基材"},
-        {"chara": "双工作台设计，提高雷射头的使用率"},
-        {"chara": "全自动晶圆处理系统"},
-        {"chara": "先进图像识别能力"}
-      ]
-    },
-    {
-      "thumimg": "http://www1.asmpacific.com/images/LS100-2.png",
-      "name":"全自动LED编带系统",
-      "model":"AT420",
-      "size": "1,710 x 1,370 x 2,130 mm³",
-      "explain": [
-        {"chara": "先进检查能力"},
-        {"chara": "自动重载器件，确保编带内均为良品"},
-        {"chara": "援多种物料处理"}
-      ]
-    },
-    {
-      "thumimg": "http://www1.asmpacific.com/images/LS100-2.png",
-      "name":"全自动晶圆图晶片分类系统",
-      "model":"MS90",
-      "size": "1,397 x 1,422 x 1,867 mm³",
-      "explain": [
-        {"chara": "双焊臂设计"},
-        {"chara": "多达 200个分类等级"},
-        {"chara": "支援分类后检查"},
-        {"chara": "特大收料范围"}
-      ]
-    },
-    {
-      "thumimg": "http://www1.asmpacific.com/images/products/image21.png",
-      "name":"全自动滴胶系統",
-      "model":"DS600",
-      "size": "2,082 x 1,090 x 2,000 mm³",
-      "explain": [
-        {"chara": "创新一站式全功能滴胶系统，大大提升良品率"},
-        {"chara": "高速滴胶"},
-        {"chara": "萤光剂处理能力"}
+      "typeName":"焊线设备",
+      "typeId":2,
+      "data":[
+        {
+          "name":"焊线机",
+          "model":"eagle_xtreme",
+          "years":"2001",
+          "number": "15",
+          "manu": "ASM",
+          "size": "暂无数据",
+          "imgs":[
+            {
+              "image":"static/product/img/hanxianji/eagle_xtreme_1.jpg"
+            },
+            {
+              "image":"static/product/img/hanxianji/eagle_xtreme_2.jpg"
+            }
+          ]
+        },
+        {
+          "name":"焊线机",
+          "model":"eg60ap",
+          "years":"2010",
+          "number": "15",
+          "manu": "ASM",
+          "size": "暂无数据",
+          "imgs":[
+            {
+              "image":"static/product/img/hanxianji/eg60_1.jpg"
+            },
+            {
+              "image":"static/product/img/hanxianji/eg60_2.jpg"
+            }
+          ]
+        }
       ]
     }
   ]

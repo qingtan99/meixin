@@ -7,7 +7,7 @@
                         <router-link :to="item.link" @click="change(i)">{{item.text}}</router-link>
                     </li>
                 </ul>
-                <div class="other-right">
+                <div class="other-right wow animated bounceInRight" data-wow-duration="1s" data-wow-delay=".6s">
                     <div class="other-right-wrap">
                         <router-view></router-view>
                     </div>

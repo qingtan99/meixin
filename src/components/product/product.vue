@@ -8,18 +8,12 @@
 					</div>
 					<div class="current-menu-content">
 						<div class="content-item">
-							<div class="page" v-for="(item, i) in sidemenu">
-								<div :class="['page-link', {'active': hideIndex[i]==true}, 'fix']">
-									<a href="javascript:;" @click="showAnchors(i)">{{item.sidename}}</a>
-									<i
-									:class="['icon iconfont', 'icon-down-trangle', {'icon-up-trangle': hideIndex[i]==true}]"
-									@click="showAnchors(i)"></i>
-								</div>
-								<div :class="['anchors-box',{'active': hideIndex[i]==true}]">
-									<div class="anchors" v-for="(value, j) in item.anchors">
-										<div :class="['anchor-item', {'active':activeIndex==10*(i+1)+(j+1)}]">
+							<div class="page">
+								<div :class="['anchors-box']">
+									<div class="anchors" v-for="(item, i) in sidemenu">
+										<div :class="['anchor-item', {'active': i === activeIndex}]">
 											<span class="dot"></span>
-											<a href="javascript:;" @click="toggleItem(i+1,j+1)">{{value.name}}</a>
+											<a href="javascript:;" @click="toggleItem(i)">{{item.name}}</a>
 										</div>
 									</div>
 								</div>
@@ -56,13 +50,13 @@
 				<!-- 产品展示 -->
 				<div class="product-wrap-list">
 					<div class="product-class-nav">
-						<ul class="fix">
-							<li class="fl" v-for="item in product"  @click="productDetails(item)">
+						<ul class="fix" v-for="item in product" v-if="item.typeId === theTypeId">
+							<li class="fl" v-for="(value, i) in item.data"  @click="productDetails(value)">
 								<div class="course-list-img">
 									<div class="img-see"></div>
-									<img v-bind:src="item.thumimg" alt="">
+									<img v-bind:src="value.imgs[0].image" alt="">
 								</div>
-								<h4>{{item.model}} - {{item.name}}</h4>
+								<h4>{{value.name}} ({{value.model}})</h4>
 							</li>
 						</ul>
 					</div>
@@ -131,15 +125,25 @@
       <div slot="sContent" class="modal-content-wrap fix">
         <div class="modal-img fl">
           <a class="a-img" href="">
-            <img v-bind:src="modalText.thumimg" alt="">
+            <img v-bind:src="defauleImg" alt="">
           </a>
-          <p>尺寸：<span>{{modalText.size}}</span>（宽深高）</p>
+          <ul class="fix">
+              <li :class="['img-item', 'fl', {'tb-selected' : i === mouseIndex}]"
+                  v-for="(item, i) in modalText.imgs">
+                <a href="javascript:;">
+                  <img v-bind:src="item.image" alt="" @mouseover="mouseoverImg($event, i)">
+                </a>
+              </li>
+          </ul>
         </div>
-        <div class="modal-right fr">
+        <div class="modal-right fl">
             <h3 class="title">{{modalText.model}}<small>{{modalText.name}}</small></h3>
-            <h4 class="featured">特色</h4>
+            <h4 class="featured">说明</h4>
             <ul>
-                <li v-for="value in modalText.explain"><i></i>{{value.chara}}</li>
+                <li><i></i>数量：{{modalText.number}}</li>
+                <li><i></i>年份：{{modalText.years}}</li>
+                <li><i></i>制造商：{{modalText.manu}}</li>
+                <li><i></i>工作台尺寸：{{modalText.size}}</li>
             </ul>
             <router-link to="/contact_mc" target="_blank">立即咨询</router-link>
         </div>
@@ -157,16 +161,18 @@
             return {
                 pageSize : 20 , //每页显示20条数据
                 currentPage : 1, //当前页码
-                count : 150, //总记录数
+                count : 20, //总记录数
                 items : [],
                 showUpTrangle: false,
                 sidemenu: null,
                 product: null,
-                hideIndex:[],
-                activeIndex: 10,
                 open: false,
                 isHide: false,
-                modalText: null
+                modalText: null,
+                defauleImg: null,  //产品详显示的主图
+                activeIndex: 0,
+                theTypeId: 1,
+                mouseIndex: 0
             }
         },
         methods : {
@@ -203,30 +209,29 @@
                 })
             },
 
-            showAnchors (i) {
-        		  //因为 JavaScript 的限制，Vue.js 不能直接对索引操作
-              //数组变动
-              if(this.hideIndex[i]) {
-                this.$set(this.hideIndex, i, false);
-              }else {
-                this.$set(this.hideIndex ,i, true);
-              }
+            //切换分类
+            toggleItem(i) {
+                this.activeIndex = i;
+                this.theTypeId = i + 1;
             },
 
-            toggleItem(i,j) {
-        		  i=i||0;
-	            j=j||0;
-	            this.activeIndex=i*10+j;
-            },
             productDetails (e) {
                 this.isHide = !this.isHide;
                 this.modalText = e;
+                this.defauleImg = this.modalText.imgs[0].image;
             },
             ok () {
-              alert("欢迎您购买本产品");
+
             },
             cancel () {
               this.isHide = !this.isHide;
+            },
+
+            //切换图片
+            mouseoverImg (event, i) {
+                let src = event.path[0].currentSrc; //获取当前图片
+                this.defauleImg = src;
+                this.mouseIndex = i;
             },
             init () {
               //请求第一页数据
@@ -312,10 +317,6 @@
 		margin-left: 13px;
 	}
 
-	.page .anchors-box {
-		display: none;
-	}
-
 	.page .anchors-box.active {
 		display: block;
 	}
@@ -327,18 +328,18 @@
 
 	.anchor-item a {
 	    word-break: break-all;
-	    padding-left: 45px;
+	    padding-left: 25px;
 	    border-left: 2px solid #fff;
 		font-size: 12px;
 	}
 
-	.current-menu-content .anchor-item.active .dot {
+  .anchor-item.active .dot {
 		display: inline-block;
 	    position: absolute;
 	    width: 1px;
 	    background-color: #18f;
 	    height: 1px;
-	    left: 29px;
+	    left: 15px;
 	    margin-top: 7px;
 	    border: 2px solid #18f;
 	    border-radius: 50%;

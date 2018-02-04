@@ -7,9 +7,7 @@
               <h4>{{ modalTitle }}</h4>
               <i class="icon iconfont icon-guanbi" title="关闭" v-model="cancelBtn" @click="cancelHandle"></i>
             </div>
-            <slot name="sContent">
-
-            </slot>
+            <slot name="sContent"></slot>
           </div>
       </div>
   </div>
@@ -81,7 +79,7 @@
 
   .modal {
     position: relative;
-    min-height: 440px;
+    min-height: calc(100% - 63px);
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 6px;
@@ -90,7 +88,7 @@
   }
 
   .modal.w {
-    width: 890px;
+    width: 735px;
   }
 
   .modal-header {
@@ -98,7 +96,7 @@
     color: #495060;
     background: #fff;
     border-radius: 6px 6px 0 0;
-    padding: 15px;
+    padding: 10px;
     border-bottom: 1px solid #e9eaec;
   }
 
@@ -114,15 +112,39 @@
   }
 
   .modal-content-wrap {
-      padding: 15px 10px 10px 10px;
-      height: 410px;
+      padding: 8px 10px 10px 10px;
+      height: 511px;
   }
 
   .modal-content-wrap .modal-img,
   .modal-content-wrap .modal-right {
       position: relative;
-      width: 50%;
       height: 100%;
+  }
+
+  .modal-content-wrap .modal-right {
+    margin-left: 30px;
+  }
+
+  .modal-img ul li {
+      margin-top: 8px;
+      margin-right: 16px;
+  }
+
+  .modal-img ul li a {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+  }
+
+  .modal-img ul li.tb-selected a {
+      border: 2px solid #333;
+      width: 56px;
+      height: 56px;
+  }
+
+  .modal-img ul li:last-child {
+      margin-right: 0;
   }
 
   .modal-right h3 {
@@ -150,7 +172,7 @@
 
   .modal-right a {
       position: absolute;
-      bottom: 48px;
+      bottom: 78px;
       left: 0;
       display: inline-block;
       padding: 0px 20px 0px 20px;
@@ -190,7 +212,7 @@
   .modal-content-wrap .modal-img .a-img {
       display: block;
       width: 400px;
-      height: 360px;
+      height: 440px;
       border: 1px solid rgba(0,0,0,.05);
   }
 

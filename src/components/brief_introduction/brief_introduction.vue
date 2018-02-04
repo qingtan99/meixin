@@ -37,11 +37,11 @@
 	    		<div class="brief-intro-text-wrap">
 	    			<div class="brief-intro-title">
 	    				<span></span>
-	    				<h3 class="animated jackInTheBox">在售设备</h3>
+	    				<h3 class="wow animated jackInTheBox">在售设备</h3>
 	    			</div>
 	    			<div class="brief-intro-nav">
 	    				<ul class="fix">
-	    					<li class="fl animated bounceInLeft">
+	    					<li class="fl wow animated bounceInLeft" data-wow-duration="2s">
 	    						<div class="nav-img">
 	    							<img src="../../assets/images/product/ceshi/20180112132748.jpg" alt="">
 	    						</div>
@@ -50,7 +50,7 @@
     								<p>这款新型破碎机零件引进德国高端技术，主要用于金属矿山、建筑砂石加工设备零件。</p>
 	    						</div>
 	    					</li>
-	    					<li class="fl animated bounceInDown">
+	    					<li class="fl wow animated bounceInDown" data-wow-duration="2s">
 	    						<div class="nav-img">
 	    							<img src="../../assets/images/product/ceshi/201801121327481.jpg" alt="">
 	    						</div>
@@ -59,7 +59,7 @@
     								<p>这款新型破碎机零件引进德国高端技术，主要用于金属矿山、建筑砂石加工设备零件。</p>
 	    						</div>
 	    					</li>
-	    					<li class="fl animated bounceInRight">
+	    					<li class="fl wow animated bounceInRight" data-wow-duration="2s">
 	    						<div class="nav-img">
 	    							<img src="../../assets/images/product/ceshi/201801121327482.jpg" alt="">
 	    						</div>
@@ -80,7 +80,7 @@
 	    	<div class="about-company-content fix">
 	    		<div class="about-con-cont-wrap w1200">
 	    			<div class="the-posi-wrap">
-	    				<div class="about-con-text animated rotateInDownRight">
+	    				<div class="about-con-text wow animated rotateInDownRight">
 	    					<div class="brief-intro-title">
 			    				<span></span>
 			    				<h3>公司介绍</h3>
@@ -94,7 +94,7 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="about-company-t com-bg fl animated slideInLeft">
+	    		<div class="about-company-t com-bg fl wow animated slideInLeft" data-wow-duration="2s">
 	    			<span class="ri-bg-w"></span>
 	    		</div>
 	    		<div class="about-company-t fr">
@@ -110,38 +110,56 @@
               <div class="cooperative-customers-wrap w1200">
                   <div class="brief-intro-title">
                     <span></span>
-                    <h3 class="animated jackInTheBox">合作客户</h3>
+                    <h3 class="wow animated jackInTheBox"  data-wow-delay="0.1s">合作客户</h3>
                   </div>
                   <ul class="fix">
-                    <li class="animated flipInX">
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
                         <img src="../../assets/images/brief/1.png" alt="">
                     </li>
-                    <li class="animated flipInX">
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
                       <img src="../../assets/images/brief/2.png" alt="">
                     </li>
-                    <li class="animated flipInX">
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
                       <img src="../../assets/images/brief/3.png" alt="">
                     </li>
-                    <li class="animated flipInX">
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
                       <img src="../../assets/images/brief/4.png" alt="">
                     </li>
-                    <li class="animated flipInX">
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
                       <img src="../../assets/images/brief/5.png" alt="">
                     </li>
-                    <li class="animated flipInX">
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
                       <img src="../../assets/images/brief/6.jpg" alt="">
                     </li>
-                    <li class="animated flipInX">
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
                       <img src="../../assets/images/brief/7.png" alt="">
                     </li>
-                    <li class="animated flipInX">
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
                       <img src="../../assets/images/brief/8.png" alt="">
                     </li>
-                    <li class="animated flipInX">
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
                       <img src="../../assets/images/brief/9.gif" alt="">
                     </li>
-                    <li class="animated flipInX">
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
                       <img src="../../assets/images/brief/10.jpg" alt="">
+                    </li>
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
+                      <img src="../../assets/images/brief/11.png" alt="">
+                    </li>
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
+                      <img src="../../assets/images/brief/12.png" alt="">
+                    </li>
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
+                      <img src="../../assets/images/brief/13.png" alt="">
+                    </li>
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
+                      <img src="../../assets/images/brief/14.png" alt="">
+                    </li>
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
+                      <img src="../../assets/images/brief/15.png" alt="">
+                    </li>
+                    <li class="wow animated flipInX" data-wow-delay="0.3s">
+                      <img src="../../assets/images/brief/16.png" alt="">
                     </li>
                   </ul>
               </div>
@@ -190,9 +208,11 @@
 
 	    },
 
-		mounted() {
-
-		}
+      mounted() {
+          if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+            new WOW().init();
+          };
+      }
 	}
 </script>
 <style scoped>
