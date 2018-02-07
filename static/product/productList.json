@@ -20,6 +20,41 @@
               "image":"static/product/img/qiege/A-WD-300T-2.jpg"
             }
           ]
+        },
+        {
+          "name":"切割机",
+          "model":"DAD321",
+          "years":"2001",
+          "number": "3",
+          "manu": "DISCO",
+          "size": "6寸",
+          "imgs":[
+            {
+              "image":"static/product/img/qiege/DAD321_1.jpg"
+            },
+            {
+              "image":"static/product/img/qiege/DAD321_2.jpg"
+            },
+            {
+              "image":"static/product/img/qiege/DAD321_3.jpg"
+            }
+          ]
+        },
+        {
+          "name":"切割机",
+          "model":"DAD3350",
+          "years":"2003、2004",
+          "number": "3",
+          "manu": "DISCO",
+          "size": "8寸",
+          "imgs":[
+            {
+              "image":"static/product/img/qiege/DAD3350_1.jpg"
+            },
+            {
+              "image":"static/product/img/qiege/DAD3350_2.jpg"
+            }
+          ]
         }
       ]
     },
@@ -56,6 +91,321 @@
             },
             {
               "image":"static/product/img/hanxianji/eg60_2.jpg"
+            }
+          ]
+        },
+        {
+          "name":"焊线机",
+          "model":"iHawk",
+          "years":"2008~2010",
+          "number": "20",
+          "manu": "ASM",
+          "size": "暂无数据",
+          "imgs":[
+            {
+              "image":"static/product/img/hanxianji/hxj_ihawk_1.jpg"
+            },
+            {
+              "image":"static/product/img/hanxianji/hxj_ihawk_2.jpg"
+            },
+            {
+              "image":"static/product/img/hanxianji/hxj_ihawk_3.jpg"
+            },
+            {
+              "image":"static/product/img/hanxianji/hxj_ihawk_4.jpg"
+            }
+          ]
+        },
+        {
+          "name":"焊线机",
+          "model":"MAXup plus",
+          "years":"",
+          "number": "15",
+          "manu": "KNS",
+          "size": "暂无数据",
+          "imgs":[
+            {
+              "image":"static/product/img/hanxianji/hxj_maxup_1.jpg"
+            },
+            {
+              "image":"static/product/img/hanxianji/hxj_maxup_2.jpg"
+            },
+            {
+              "image":"static/product/img/hanxianji/hxj_maxup_3.jpg"
+            },
+            {
+              "image":"static/product/img/hanxianji/hxj_maxup_4.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typeName":"固晶设备",
+      "typeId":3,
+      "data":[
+        {
+          "name":"固晶机",
+          "model":"AD830",
+          "years":"2009~2012",
+          "number": "10",
+          "manu": "ASM",
+          "size": "6~8寸",
+          "imgs":[
+            {
+              "image":"static/product/img/gujing/gujing_1_1.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_1_2.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_1_3.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_1_4.jpg"
+            }
+          ]
+        },
+        {
+          "name":"镜座粘合机",
+          "model":"AD830",
+          "years":"2009~2012",
+          "number": "3",
+          "manu": "ASM",
+          "size": "6~8寸",
+          "imgs":[
+            {
+              "image":"static/product/img/gujing/gujing_2_1.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_2_2.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_2_3.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_2_4.jpg"
+            }
+          ]
+        },
+        {
+          "name":"镜座粘合机",
+          "model":"IS898GA",
+          "years":"2009~2012",
+          "number": "4",
+          "manu": "ASM",
+          "size": "6~8寸",
+          "imgs":[
+            {
+              "image":"static/product/img/gujing/gujing_3_1.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_3_2.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_3_3.jpg"
+            }
+          ]
+        },
+        {
+          "name":"镜座粘合机",
+          "model":"IS8912DA",
+          "years":"2009~2012",
+          "number": "4",
+          "manu": "ASM",
+          "size": "6~8寸",
+          "imgs":[
+            {
+              "image":"static/product/img/gujing/gujing_4_1.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_4_2.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_4_3.jpg"
+            }
+          ]
+        },
+        {
+          "name":"固晶机",
+          "model":"AD862H",
+          "years":"2009~2012",
+          "number": "2",
+          "manu": "ASM",
+          "size": "6寸",
+          "imgs":[
+            {
+              "image":"static/product/img/gujing/gujing_5_1.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_5_2.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_5_3.jpg"
+            }
+          ]
+        },
+        {
+          "name":"镜座粘合机",
+          "model":"IS868LA3",
+          "years":"",
+          "number": "2",
+          "manu": "ASM",
+          "size": "",
+          "imgs":[
+            {
+              "image":"static/product/img/gujing/gujing_6_1.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_6_2.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_6_3.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_6_4.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_6_5.jpg"
+            }
+          ]
+        },
+        {
+          "name":"镜座粘合机",
+          "model":"IS8912DA",
+          "years":"",
+          "number": "3",
+          "manu": "ASM",
+          "size": "",
+          "imgs":[
+            {
+              "image":"static/product/img/gujing/gujing_7_1.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_7_2.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_7_3.jpg"
+            }
+          ]
+        },
+        {
+          "name":"镜座粘合机",
+          "model":"IS868LA2",
+          "years":"",
+          "number": "3",
+          "manu": "ASM",
+          "size": "",
+          "imgs":[
+            {
+              "image":"static/product/img/gujing/gujing_8_1.jpg"
+            },
+            {
+              "image":"static/product/img/gujing/gujing_8_2.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typeName":"邦定机",
+      "typeId":4,
+      "data":[
+        {
+          "name":"邦定机",
+          "model":"AB559A",
+          "years":"",
+          "number": "9",
+          "manu": "ASM",
+          "size": "暂无数据",
+          "imgs":[
+            {
+              "image":"static/product/img/bangdingji/bdj_1_1.jpg"
+            },
+            {
+              "image":"static/product/img/bangdingji/bdj_1_2.jpg"
+            },
+            {
+              "image":"static/product/img/bangdingji/bdj_1_3.jpg"
+            }
+          ]
+        },
+        {
+          "name":"邦定机",
+          "model":"AB530",
+          "years":"",
+          "number": "6",
+          "manu": "ASM",
+          "size": "暂无数据",
+          "imgs":[
+            {
+              "image":"static/product/img/bangdingji/bdj_2_1.jpg"
+            },
+            {
+              "image":"static/product/img/bangdingji/bdj_2_2.jpg"
+            },
+            {
+              "image":"static/product/img/bangdingji/bdj_2_3.jpg"
+            },
+            {
+              "image":"static/product/img/bangdingji/bdj_2_4.jpg"
+            }
+          ]
+        },
+        {
+          "name":"邦定机",
+          "model":"AB520",
+          "years":"",
+          "number": "6",
+          "manu": "ASM",
+          "size": "暂无数据",
+          "imgs":[
+            {
+              "image":"static/product/img/bangdingji/bdj_3_1.jpg"
+            },
+            {
+              "image":"static/product/img/bangdingji/bdj_3_2.jpg"
+            },
+            {
+              "image":"static/product/img/bangdingji/bdj_3_3.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typeName":"研磨机",
+      "typeId":5,
+      "data":[
+        {
+          "name":"研磨机",
+          "model":"DFG8560",
+          "years":"",
+          "number": "1",
+          "manu": "DISCO",
+          "size": "暂无数据",
+          "imgs":[
+            {
+              "image":"static/product/img/yanmo/yanmo_dfg_1.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typeName":"其它周边",
+      "typeId":6,
+      "data":[
+        {
+          "name":"烘干机",
+          "model":"",
+          "years":"",
+          "number": "1",
+          "manu": "",
+          "size": "暂无数据",
+          "imgs":[
+            {
+              "image":"static/product/img/others/other_1.jpg"
             }
           ]
         }

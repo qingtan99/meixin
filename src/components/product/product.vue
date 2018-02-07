@@ -255,7 +255,7 @@
 </script>
 <style scoped>
 	.product-main-wrap {
-		margin-top: 50px;
+		margin-top: 25px;
 		margin-bottom: 50px;
 		position: relative;
 	}
@@ -275,7 +275,7 @@
 	}
 
 	.vertical-nav .sidemenu:nth-child(2) {
-		margin-top: 35px;
+		margin-top: 20px;
 	}
 
 	.sidemenu .current-menu {
@@ -398,8 +398,8 @@
 	}
 
 	.product-class-nav ul li {
-		margin: 0 10px 20px 10px;
-		width: 296px;
+		margin: 0 5px 20px 10px;
+		width: 280px;
 		border-radius: 4px;
 		background: #fff;
 	    box-shadow: 0 1px 2px #c5c5c5;
@@ -409,7 +409,7 @@
 
 	.product-class-nav ul li .course-list-img {
 		position: relative;
-		height: 160px;
+		height: 308px;
 		overflow: hidden;
 	}
 

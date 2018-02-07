@@ -34,10 +34,10 @@
                         电话：0769-85323589
                     </p>
                     <p>
-                        QQ：1141030009
+                        QQ：2281157930
                     </p>
                     <p>
-                        邮箱：<a class="mail" href="Mailto:meichang202@126.com">meixin202@126.com</a>
+                        邮箱：<a class="mail" href="Mailto:meichang202@126.com">meichang202@126.com</a>
                     </p>
                     <p>
                         <b>办公地点</b>

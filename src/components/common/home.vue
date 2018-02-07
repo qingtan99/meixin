@@ -65,7 +65,10 @@
 					<router-link to="/contact_mc">联系我们</router-link><i>|</i>
 					<router-link to="/friendlink">友情链接</router-link>
 	    		</nav>
-	    		<div class="copyright">Copyright © 2018 mx-semi.cn All Rights Reserved</div>
+	    		<div class="copyright">Copyright © 2018 mx-semi.cn All Rights Reserved          <a class="icp" href="http://www.miitbeian.gov.cn/" target="_blank">
+            粤ICP备18016323号-1
+          </a>
+          </div>
 	    	</div>
 	    </div>
 	</div>
@@ -330,6 +333,14 @@
 .footer .copyright {
     color: #999;
     padding: 10px 0;
+}
+
+.copyright .icp {
+  color: #999;
+}
+
+.copyright .icp:hover {
+   text-decoration: underline;
 }
 /*END底部*/
 </style>
